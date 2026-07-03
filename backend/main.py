@@ -76,6 +76,11 @@ class ChatQuery(BaseModel):
 
 # ---------- API Endpoints ----------
 
+@app.get("/")
+async def root():
+    """Root endpoint - confirms the API is running."""
+    return {"message": "Knowledge Base API v4.0 is running", "endpoints": "/api/health, /api/notes, /api/graph, /api/chat/graph"}
+
 @app.get("/api/health")
 async def health():
     """Return server health, storage mode, AI status, and environment."""
