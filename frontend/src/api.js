@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || '/api'
+const API_BASE = import.meta.env.VITE_API_URL || 'https://knowledge-base-backend-pi14.onrender.com'
 
 /**
  * Get the Supabase auth token from localStorage (set by @supabase/supabase-js).
